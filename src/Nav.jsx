@@ -5,32 +5,33 @@ import {
   NavLink,
   BrowserRouter
 } from "react-router-dom";
-import Home from "./Screens/Home";
-import Profesorado from "./Screens/Profesorado";
-import Contact from "./Screens/Contact";
-import Temario from "./Screens/Temario";
-import Blog from "./Screens/Blog";
-
+import Header from "./Components/Header/Header"
+import About from "./Components/About/About"
+import Resume from "./Components/Resume/Resume"
+import Portfolio from "./Components/Portfolio/Portfolio";
 
 class Nav extends Component {
   render() {
     return (
       <BrowserRouter>
         <div>
-          <h1>Master odontologia</h1>
-          <ul className="header">
-            <li><NavLink exact to="/">Home</NavLink> </li>
-            <li><NavLink to="/temario">Temario curso</NavLink></li>
-            <li><NavLink to="/profesorado">Profesorado</NavLink></li>      
-            <li><NavLink to="/blog">Blog</NavLink></li>
-            <li><NavLink to="/contact">Contacto</NavLink></li>
-          </ul>
+          <nav id="nav-wrap">
+            <a className="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+            <a className="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+            <ul id="nav" className="nav">
+              <li><NavLink exact to="/">Home</NavLink></li>
+              <li><NavLink to="/about">Sobre mi</NavLink></li>
+              <li><NavLink to="/resume">Curriculum</NavLink></li>
+              <li><NavLink to="/portfolio">Portfolio</NavLink></li>
+              {/*<li><NavLink to="/contact">Contacto</NavLink></li>*/}
+            </ul>
+          </nav>
           <div className="content">
-            <Route exact path="/" component={Home} />
-            <Route path="/profesorado" component={Profesorado} />
-            <Route path="/contact" component={Contact} />
-            <Route path="/blog" component={Blog} />
-            <Route path="/temario" component={Temario} />
+            <Route exact path="/" component={Header} />
+            <Route path="/about" component={About} />
+            <Route path="/resume" component={Resume} />
+            <Route path="/portfolio" component={Portfolio} />
+            {/*<Route path="/contact" component={Contact} />*/}
           </div>
         </div>
       </BrowserRouter>
