@@ -8,7 +8,7 @@ export default class Header extends Component {
           <div className="banner-text">
             <h1 className="responsive-headline">Soy Leonardo Badilla.</h1>
             <h3>Soy un <span>Frontend developer</span> de Barcelona capaz de crear Web's utilizando <span>ReactJS y Redux</span>. 
-            Navega por el Site clicando en el Header y conoce mas <NavLink to="/about">Sobre mi</NavLink>.</h3>
+            Navega por el Site clicando en el Header y conoce mas {/*<NavLink to="/about">Sobre mi</NavLink>*/}.</h3>
             <hr />
             <ul className="social">
               <li><a rel="noopener noreferrer" target="_blank" href="https://twitter.com/vandaLbd"><i className="fa fa-twitter" /></a></li>

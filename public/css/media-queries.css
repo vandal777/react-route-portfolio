@@ -146,7 +146,6 @@
    /* hide menu panel */
    #nav-wrap ul#nav {
       height: auto;
-		display: none;
       clear: both;
       width: auto; 
       float: right;     
@@ -163,6 +162,25 @@
       background: #1f2024;
       margin: 0 30px;
       clear: both;
+   }
+
+   .navtrue {
+	   display: block;
+      padding: 30px 20px 48px 20px !important;
+      background: #1f2024 !important;
+      margin: 0 30px !important;
+      clear: both;
+   }
+   .navfalse {
+      display: none;
+      height: auto;
+      clear: both;
+      width: auto; 
+      float: right;     
+
+      position: relative;
+      top: 12px;
+      right: 0;
    }
 
    ul#nav li {
