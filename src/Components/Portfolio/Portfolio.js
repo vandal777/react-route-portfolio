@@ -6,16 +6,16 @@ export default class Portfolio extends Component {
       <section id="portfolio">
         <div className="row">
           <div className="twelve columns collapsed">
-            <h1>Aquí puedes ver algunos de mis trabajos y proyectos</h1>
+            <h1>Aquí puedes ver algunos de los trabajos y proyectos personales y en los que he colaborado</h1>
             <div id="portfolio-wrapper" className="bgrid-quarters s-bgrid-thirds cf">
               <div className="columns portfolio-item">
                 <div className="item-wrap">
-                  <a href="https://vandal777.github.io/reactreduxwheaterapp/" title>
-                    <img alt src="images/portfolio/coffee.jpg" />
+                  <a href="#modal-01" title>
+                    <img alt src="images/portfolio/yaencontre.PNG" />
                     <div className="overlay">
                       <div className="portfolio-item-meta">
-                        <h5>Weather App</h5>
-                        <p>With React, Redux and PropTypes</p>
+                        <h5>Yaencontre</h5>
+                        <p>Portal inmobiliario Single Page App usando: React, Redux y SSR </p>
                       </div>
                     </div>
                     <div className="link-icon"><i className="icon-plus" /></div>
@@ -123,11 +123,11 @@ export default class Portfolio extends Component {
             </div> 
           </div> 
           <div id="modal-01" className="popup-modal mfp-hide">
-            <img className="scale-with-grid" src="images/portfolio/modals/m-coffee.jpg" alt />
+            <img className="scale-with-grid" src="images/portfolio/modals/ye-results.PNG" alt />
             <div className="description-box">
-              <h4>Coffee Cup</h4>
-              <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-              <span className="categories"><i className="fa fa-tag" />Branding, Webdesign</span>
+              <h4><a href={"https://www.yaencontre.com"}>www.yaencontre.com</a></h4>
+              <p>Este fue mi primer proyecto en el cual estuve desde el desarrollo hasta la salida a producción</p>
+              <span className="categories"><i className="fa fa-tag" />Webdesign</span>
             </div>
             <div className="link-box">
               <a href="http://www.behance.net">Details</a>

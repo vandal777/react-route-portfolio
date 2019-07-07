@@ -20,7 +20,6 @@ class Nav extends Component {
 
   clickHandler() {
     this.setState({open: this.state.open ? false : true})
-    console.log("statequieto")
   }
 
   render() {
@@ -33,7 +32,7 @@ class Nav extends Component {
               <li><NavLink onClick={this.clickHandler} exact to="/">Home</NavLink></li>
               <li><NavLink onClick={this.clickHandler} to="/about">Sobre mi</NavLink></li>
               <li><NavLink onClick={this.clickHandler} to="/resume">Curriculum</NavLink></li>
-              {/*<li><NavLink onClick={this.clickHandler} to="/portfolio">Portfolio</NavLink></li>*/}
+              <li><NavLink onClick={this.clickHandler} to="/portfolio">Portfolio</NavLink></li>
               {/*<li><NavLink to="/contact">Contacto</NavLink></li>*/}
             </ul>
           </nav>
@@ -41,12 +40,12 @@ class Nav extends Component {
             <Route exact path="/" component={Header} />
             <Route path="/about" component={About} />
             <Route path="/resume" component={Resume} />
-            {/*<Route path="/portfolio" component={Portfolio} />*/}
+            <Route path="/portfolio" component={Portfolio} />
             {/*<Route path="/contact" component={Contact} />*/}
           </div>
-          <a href={"https://leonardobadilla.com"}>home</a>
-          <a href={"https://leonardobadilla.com/about"}>About</a>
-          <a href={"https://leonardobadilla.com/resume"}>Curriculum</a>
+          <a target="_self" className={"homeSeoLink"} href={"https://leonardobadilla.com"}>home</a>
+          <a target="_self" className={"homeSeoLink"} href={"https://leonardobadilla.com/about"}>About</a>
+          <a target="_self" className={"homeSeoLink"} href={"https://leonardobadilla.com/resume"}>Curriculum</a>
         </div>
     );
   }
